@@ -6,3 +6,5 @@ server database via php files. Total and weekly statistics are also generated an
 Test account:
 username: Alan
 password: pass
+Sensitive data like passwords are encrypted using one-way hash functions and randomly generated salt.
+Google maps, Google Places and Google Directions libraries are integrated in the application to enable route drawing. Google autocomplete is used to display type-ahead messages. JSON queries are used to communicated with the external server database via php files and Google servers.  
