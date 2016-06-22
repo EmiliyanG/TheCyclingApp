@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context="com.thecyclingapp.emiliyan.thecyclingapp.activities.FindActivity"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_marginRight="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/friends"
+                    android:layout_weight="1"
+                    android:background="@color/custom_lighter"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:id="@+id/imageView3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center_horizontal|top"
+                        android:src="@drawable/find_people" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friends"
+                        android:id="@+id/textView3"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:textColor="@color/background"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/custom_lighter"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/findPeople">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:id="@+id/imageView8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center_horizontal|top"
+                        android:src="@drawable/find_new_people" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/people"
+                        android:id="@+id/textView8"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:textColor="@color/background"
+                        android:textSize="20sp"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:id="@+id/findPlaces"
+                android:layout_weight="1"
+                android:background="@color/custom_lighter"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/find_places" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/places"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textSize="20sp"
+                    android:textColor="@color/background" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/menuButton"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/menu_button"
+
+            android:contentDescription="menu button"
+            android:alpha="0.9"
+            />
+    </FrameLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/drawerList"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/background">
+    </ListView>
+</android.support.v4.widget.DrawerLayout>

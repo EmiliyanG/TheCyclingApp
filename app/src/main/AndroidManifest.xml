@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thecyclingapp.emiliyan.thecyclingapp">
+
+    <uses-permission android:name="com.javapapers.android.maps.path.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.Cycle"
+            android:label="@string/title_activity_cycle"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.LogInActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".extras.ResetPassword" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activities.FindActivity" />
+        <activity
+            android:name=".activities.PlacesActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.Followees"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activities.TestConnection" />
+        <activity android:name=".activities.FindPeopleActivity" />
+        <activity android:name=".activities.FeedActivity">
+
+        </activity>
+    </application>
+
+</manifest>

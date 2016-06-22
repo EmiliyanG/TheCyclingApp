@@ -1,0 +1,102 @@
+<resources>
+    <string name="google_directions_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCcRCmIxm4vHLPyRcnGTl1fWORIO4uPgMg
+    </string>
+    <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyD14AhH4PJ2UfldJSpPDIEcizFQkX3uBWE
+    </string>
+
+
+    <string name="directions_api_query_path">https://maps.googleapis.com/maps/api/directions/json</string>
+    <string name="google_autocompletion_api_query_path">https://maps.googleapis.com/maps/api/place/autocomplete/json</string>
+    <string name="google_places_api_query_path">https://maps.googleapis.com/maps/api/place/search/json?</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+
+    <string name="SUCCESS">Welcome!</string>
+    <string name="VALID_USER_PASSWORD_WRONG">Your password is wrong. Please try again.</string>
+    <string name="NO_SUCH_USER_FOUND">Username does not exist!</string>
+    <string name="INVALID_USERNAME_INPUT">Username is not valid. Characters allowed: <b>A-Z a-z 0-9 . _ -</b> </string>
+    <string name="INVALID_PASSWORD_INPUT">Password should be longer than 3 characters </string>
+    <string name="INVALID_EMAIL">Email is not valid!</string>
+    <string name="RETYPED_PASSWORD_NO_MATCH">Retyped password does not match!</string>
+    <string name="INVALID_FIRST_NAME">First name is invalid. Characters allowed: <b>A-Z a-z</b> from 3 to 40 characters</string>
+    <string name="INVALID_LAST_NAME">Last name is invalid. Characters allowed: <b>A-Z a-z</b> from 3 to 40 characters</string>
+    <string name="DUPLICATE_USERNAME">Username is already used. Try with another one.</string>
+    <string name="NO_INTERNET_CONNECTION">Please check your internet connection!</string>
+
+
+    <string name="STATUS_ZERO_RESULTS">There are no bicycle shops in 5 km radius.</string>
+    <string name="STATUS_OVER_QUERY_LIMIT">Unable to find bicycle shops around your location.</string>
+
+
+    <string name="app_name">TheCyclingApp</string>
+    <string name="title_activity_cycle">cycle</string>
+    <string name="activity_cycle_display">display</string>
+    <string name="distance_hint">distance</string>
+    <string name="cycle_start_button">START</string>
+    <string name="cycle_pause_button">PAUSE</string>
+    <string name="paused_layout_hint">paused</string>
+    <string name="count_down_hint">Get Ready!</string>
+    <string name="paused_layout_hint_1"><b>||</b></string>
+    <string name="paused_layout_continue">continue</string>
+    <string name="paused_layout_stop">stop</string>
+    <string name="space"> </string>
+    <string name="default_distance_value">0</string>
+    <string name="search_bar_hint">Search for route destination</string>
+    <string name="current_speed_description">m/s</string>
+    <string name="speed_hint">current speed</string>
+    <string name="cycle_calories">0</string>
+    <string name="time_hint">time</string>
+    <string name="chronometer_text">timer</string>
+    <string name="calories_burnt_hint">calories</string>
+    <string name="current_speed">0.0</string>
+    <string name="logIn_Register">Don\'t have account?</string>
+    <string name="log_in_button">Log in</string>
+    <string name="log_in_warning">Username and password are not valid!</string>
+    <string name="log_in_forgotten_password">Forgot password?</string>
+    <string name="cancel">cancel</string>
+    <string name="register">register</string>
+    <string name="Reset">reset</string>
+    <string name="findPeople">Search for people</string>
+    <array name="menu_items">
+        <item>@string/news_feed</item>
+        <item>@string/profile</item>
+        <item>@string/cycle</item>
+        <item>@string/find</item>
+        <item>@string/sos</item>
+        <item>@string/settings</item>
+        <item>@string/log_out</item>
+    </array>
+
+    <string name="news_feed">feed</string>
+    <string name="profile">profile</string>
+    <string name="cycle">cycle</string>
+    <string name="find">find</string>
+    <string name="sos">SOS</string>
+    <string name="settings">settings</string>
+    <string name="log_out">log out</string>
+    <string name="weekLyAvgSpeed">average speed</string>
+    <string name="thisWeek">this week</string>
+    <string name="total">total</string>
+    <string name="distance">distance</string>
+    <string name="hoursCycling">hours cycling</string>
+    <string name="defaultHours">0 hours</string>
+    <string name="defaultAvgSpeed">0 m/s</string>
+    <string name="defaultDistance">0 meters</string>
+    <string name="people">FIND PEOPLE</string>
+    <string name="friends">FOLLOWEES</string>
+
+    <string name="places">PLACES</string>
+    <string name="title_activity_places">Map</string>
+    <string name="loading">Looking for nearby bicycle shops …</string>
+    <string name="pleaseWait">Please wait.</string>
+    <string name="more">more</string>
+    <string name="feed">Feed</string>
+    <string name="foundResults">Found %d result(s)</string>
+    <string name="no_results">No results found</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="find_people">Find people</string>
+</resources>

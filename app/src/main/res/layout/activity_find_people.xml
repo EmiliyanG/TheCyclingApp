@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_dark"
+        tools:context=".activities.Followees"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/titleAndMainContainer"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find people"
+                android:id="@+id/title"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@color/background"
+                android:gravity="center_horizontal"
+                android:textColor="@color/custom_lighter"
+                android:textSize="20sp"
+                android:padding="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/searchOtherUsers"
+                android:background="@color/custom_lightest"
+                android:hint="@string/findPeople"
+                android:textColor="@color/background"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColorHint="@color/custom_medium" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_gravity="center_horizontal"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView4">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mainContainer">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more"
+                        android:id="@+id/loadMore"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/menuButton"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/menu_button"
+
+            android:contentDescription="menu button"
+            android:alpha="0.9"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp" />
+    </FrameLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/drawerList"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/background">
+    </ListView>
+</android.support.v4.widget.DrawerLayout>

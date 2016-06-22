@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LogInActivity"
+    android:background="@color/custom_lightest">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/custom_lightest">
+
+        <ImageView
+            android:layout_width="145dp"
+            android:layout_height="154dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/the_cycling_app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logIn_Register"
+            android:id="@+id/haveAccount"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/custom_medium"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:id="@+id/logInUsername"
+            android:hint="@string/username"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/custom_lighter"
+            android:textColor="@color/background"
+            android:textColorHint="@color/custom_medium"
+            android:inputType="textNoSuggestions" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/logInPassword"
+            android:hint="@string/password"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/custom_lighter"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/background"
+            android:textColorHint="@color/custom_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in_forgotten_password"
+            android:id="@+id/forgottenPassword"
+            android:textColor="@color/custom_medium"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in_button"
+            android:id="@+id/logInBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/background"
+            android:textColor="@color/custom_lighter"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in_warning"
+            android:id="@+id/logInWarning"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</FrameLayout>
